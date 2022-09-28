@@ -1,6 +1,6 @@
 import React from "react";
 import { mdiOpenInNew } from '@mdi/js'
-import Icon from '@mdi/react'
+import Icon from "@mdi/react";
 
 const ProjectCards = (props) => {
 
@@ -13,11 +13,12 @@ const ProjectCards = (props) => {
                 <div className="title-and-links">
                     <h4 className="project-title">{project.name}</h4>
                     <div className="project-links">
-                        <a href={project.github}>
+                        <a href={project.github} className='links' target="_blank">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github"/>
                         </a>
-                        <a href className='project-links'>
-                            <img src={mdiOpenInNew} alt="open in new"/>
+                        <a href={project.url} className='links' target="_blank">
+                            <Icon path={mdiOpenInNew}
+                            color="black" />
                         </a>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ const Projects = () => {
         {
             "id": 1,
             "name" : "E-commerce Site",
-            "description" : "A mock E-commerce website, using the free-store-API, and Firebase Storage API. Users can uses the google login, to save their cart, address, and payment information, as well as view their order history",
+            "description" : "A mock E-commerce website, using the free-store-API, and Firebase Storage API. Users can uses the google login, to save their cart, address, and payment information, as well as view their order history.",
             "url" : "https://jocular-cucurucho-8e6c53.netlify.app/",
             "github": "https://github.com/dvonnew/mock-ecommerce",
             "image" : ecommerce
@@ -20,13 +20,13 @@ const Projects = () => {
         {
             "id" : 2,
             "name" : "Todo-list",
-            "description" : "A task list app, that maintains a users list of task/reminders and allows them to set the due date, priority and title. The user can also mark tasks as complete as well as delete tasks that are no longer needed",
+            "description" : "A task list app, that maintains a users list of task/reminders and allows them to set the due date, priority and title. The user can also mark tasks as complete as well as delete tasks that are no longer needed.",
             "url" : "https://festive-goodall-dba849.netlify.app/",
             "github": "https://github.com/dvonnew/todo_list",
             "image" : taskApp
         },
         {
-            "id" : 2,
+            "id" : 3,
             "name" : "Weather App",
             "description" : "A weather app using the OpenWeather API. Users can search for a location and receive relevant weather data for the location. Users can see both Farenheit and Celsius.",
             "url" : "https://friendly-clarke-bfd541.netlify.app/",
