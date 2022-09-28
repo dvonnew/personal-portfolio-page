@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+body{
+  padding: 2%;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  max-width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-size: 13px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* bio */
+
+.bio {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+
+
+.portrait {
+  object-fit: contain;
+}
+
+.about-me-write-up {
+  padding: 2%;
+  border: .25 solid rgb(209, 209, 209);
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 5px;
+}
+
+.write-up{
+  text-align: justify;
+}
+
+/* projects */
+
+.projects{
+  display: absolute;
+  
+}
+
+.projects-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.project-card {
+  max-width: 250px;
+  border: .25px rgb(218, 218, 218) solid;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px grey;
+  margin: 2%;
+  justify-self: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.project-image {
+  border-radius: 5px;
+}
+
+
+.project-details {
+  padding-left: 2%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr;
+}
+
+.description{
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: justify;
+}
+
+/* contact */
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2%;
+}
+
+.contact-info {
+  border: .25 solid rgb(209, 209, 209);
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 5px;
+}
+
+.contact-photo {
+  object-fit: contain;
+  padding: 2%;
+}
+
+@media (max-width: 600px) {
+  .bio {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+  .portrait {
+    display: flex;
+    flex-direction: center;
+  }
+  
+  .contacts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects-display{
+    grid-template-columns: 1fr;
+    align-items: center;
   }
 }
